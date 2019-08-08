@@ -11,6 +11,7 @@
 body {
     height: 100%;
     font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
 }
 
 .banner {
@@ -21,6 +22,8 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #buttons {
@@ -30,9 +33,60 @@ body {
 .dropdown-menu {
     width: 400%;
     height: auto;
-    margin-left: 200px
+    margin-left: 200px;
 }
 
-#logout {
-    visibility: hidden;
+.carousel {
+    width: 80%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+.product {
+    width: 80%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-title {
+    text-align: center;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-img-top {
+    object-fit: cover;
+}
+
+.card-img-top {
+    /*height: 11vw;*/
+    object-fit: cover;
+}
+  /* Small devices (landscape phones, 576px and up) */
+  @media (min-width: 576px) {
+    .card-img-top {
+        height: 19vw;
+    }
+  }
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) {
+    .card-img-top {
+        height: 16vw;
+    }
+  }
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+    .card-img-top {
+        height: 11vw;
+    }
+  }
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 992px) {
+    .card-img-top {
+        height: 11vw;
+    }
+  }
