@@ -21,6 +21,8 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #buttons {
@@ -30,5 +32,27 @@ body {
 .dropdown-menu {
     width: 400%;
     height: auto;
-    margin-left: 200px
+    margin-left: 200px;
+}
+
+.carousel {
+    width: 80%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.product {
+    width: 80%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-title {
+    text-align: center;
+}
+
+.card-body {
+    text-align: center;
 }
