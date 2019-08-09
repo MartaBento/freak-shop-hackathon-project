@@ -17,7 +17,7 @@ body {
 .banner {
     height: 90vh;
     min-height: 400px;
-    background-image: url('../resources/breathtaking_banner.jpg');
+    background-image: url('resources/breathtaking_banner.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

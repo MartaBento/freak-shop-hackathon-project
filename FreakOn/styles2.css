@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
-@import url('https://use.fontawesome.com/releases/v5.0.6/css/all.css');
+@import url('https://use.fontawesome.com/releases/v5.8.2/css/all.css');
 
 * {
     text-rendering:optimizeLegibility!important;
@@ -20,21 +20,21 @@ header,
 }
 
 #intro {
-    background: url("../resources/banner.png")no-repeat center center fixed;
+    background: url("resources/banner.png")no-repeat center center fixed;
     background-size: cover;
 }
 
 .top-nav-collapse {
-    background-color: rgb(0, 11, 36);
+    background-color: rgba(0, 11, 36, 0.637);
   }
-  @media (max-width: 768px) {
+  @media (min-width: 768px) {
     .navbar:not(.top-nav-collapse) {
-      background-color: rgb(0, 11, 36);;
+      background-color: rgba(0, 11, 36, 0.637);
     }
   }
   @media (min-width: 800px) and (max-width: 850px) {
     .navbar:not(.top-nav-collapse) {
-      background-color: rgb(0, 11, 36);;
+      background-color: rgba(0, 11, 36, 0.637);
     }
   }
 
@@ -46,6 +46,7 @@ header,
 }
 
 .card {
+    text-align: left;
     margin-left: 40px;
     margin-right: auto;
 }
@@ -66,13 +67,19 @@ h5 {
 .badge-notify{
     background:red;
     position:relative;
-    top: -20px;
-    right: 10px;
+    top: -6px;
+    right: 0px;
   }
-  .my-cart-icon-affix {
+
+.my-cart-icon-affix {
     position: fixed;
     z-index: 999;
-  }
+}
+
+.cartNumber {
+    align-content: center;
+    align-items: center;
+}
 
 /* map section */
 #map-container-section {
