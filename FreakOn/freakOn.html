@@ -19,6 +19,10 @@
     <script src="https://cdn.rawgit.com/openlayers/openlayers.github.io/master/en/v5.3.0/build/ol.js"></script>
     <link rel="stylesheet" href="https://cdn.rawgit.com/openlayers/openlayers.github.io/master/en/v5.3.0/css/ol.css">
 
+    <script type="text/javascript" src="store.js"></script>
+    <script type="text/javascript" src="jquery.mycart.js"></script>
+
+
 </head>
 
 <body>
@@ -107,346 +111,443 @@
     </div>
 
     <div class="products">
-
-    </div>
-
-    <div class="testimonials">
-
-        <!-- Section: Testimonials v.2 -->
-        <section class="text-center my-5">
-
-            <!-- Section heading -->
-            <h2 class="h1-responsive font-weight-light my-5">Testimonials</h2>
-            <h5>Check out what our users say about our products!</h5>
-            <br>
-
-            <div class="wrapper-carousel-fix">
-                <!-- Carousel Wrapper -->
-                <div id="carousel-example-1" class="carousel no-flex testimonial-carousel slide carousel-fade" data-ride="carousel" data-interval="false">
-                    <!--Slides-->
-                    <div class="carousel-inner" role="listbox">
-                        <!--First slide-->
-                        <div class="carousel-item active">
-                            <div class="testimonial">
-                                <!--Avatar-->
-                                <div class="avatar mx-auto mb-4">
-                                    <img src="resources/robin.jpg" width="200" height="200" class="rounded-circle img-fluid z-depth-1" alt="First sample avatar image">
-                                </div>
-                                <!--Content-->
-                                <p>
-                                    <i class="fas fa-quote-left"></i> I don't know how to explain the joy I have using these products. When the company
-                                    started, I was pretty excited, but also very fearful with the possibility of my kids
-                                    or my grandkids find out about my dark fantasies, but everything worked out pretty well
-                                    since the first delivery and I can't wait to try out the new products!
-                                </p>
-                                <br>
-                                <h4 class="font-weight-bold">Robin Opinião</h4>
-                                <h6 class="font-weight-bold my-3">Super Ultra Senior Dev, former Ultra Master Coder, 75 years</h6>
-
-                            </div>
-                        </div>
-                        <!--First slide-->
-                        <!--Second slide-->
-                        <div class="carousel-item">
-                            <div class="testimonial">
-                                <!--Avatar-->
-                                <div class="avatar mx-auto mb-4">
-                                    <img src="resources/campino.jpg" width="200" height="200" class="rounded-circle img-fluid z-depth-1" alt="Second sample avatar image">
-                                </div>
-                                <!--Content-->
-                                <p>
-                                    <i class="fas fa-quote-left"></i>Eventually we all gonna die… So, why not enjoy our lives to the maximum?? And when
-                                    I say maximum, I really mean “maximum”!! At least I will die satisfied! </p>
-                                <h4 class="font-weight-bold">Catarina Campino</h4>
-                                <h6 class="font-weight-bold my-3">Bootcamp Momma for the last 45 years, 81 years</h6>
-
-                            </div>
-                        </div>
-                        <!--Second slide-->
-                        <!--Third slide-->
-                        <div class="carousel-item">
-                            <div class="testimonial">
-                                <!--Avatar-->
-                                <div class="avatar mx-auto mb-4">
-                                    <img src="resources/chris.jpg" width="200" height="200" class="rounded-circle img-fluid z-depth-1" alt="Third sample avatar image">
-                                </div>
-                                <!--Content-->
-                                <p>
-                                    <i class="fas fa-quote-left"></i> I was completely shocked!! In the UK, there wasn't a website like this one!! But
-                                    when I entered the site for the first time, the imagination I had in my younger years
-                                    began to appear again... And I truly recommend that horny wheelchair! Wink Wink!</p>
-                                <h4 class="font-weight-bold">Christina Hinchin</h4>
-                                <h6 class="font-weight-bold my-3">Former Artist and still a Dev, 88 years</h6>
-                            </div>
-                        </div>
-                        <!--Third slide-->
-                        <!--Forth slide-->
-                        <div class="carousel-item">
-                            <div class="testimonial">
-                                <!--Avatar-->
-                                <div class="avatar mx-auto mb-4">
-                                    <img src="resources/audrey.jpg" width="200" height="200" class="rounded-circle img-fluid z-depth-1" alt="Third sample avatar image">
-                                </div>
-                                <!--Content-->
-                                <p>
-                                    <i class="fas fa-quote-left"></i> I was amazed! This site completely changed my sex life. Before, it was boring with
-                                    no type of action whatsoever… Now, I think it’s even better than when I was younger!</p>
-                                <h4 class="font-weight-bold">Audrey Lopes</h4>
-                                <h6 class="font-weight-bold my-3">Former Dev, Student Momma, 73 years</h6>
-                            </div>
-                        </div>
-                        <!--Forth slide-->
-                        <!--Fifth slide-->
-                        <div class="carousel-item">
-                            <div class="testimonial">
-                                <!--Avatar-->
-                                <div class="avatar mx-auto mb-4">
-                                    <img src="resources/rolo.jpg" width="200" height="200" class="rounded-circle img-fluid z-depth-1" alt="Third sample avatar image">
-                                </div>
-                                <!--Content-->
-                                <p>
-                                    <i class="fas fa-quote-left"></i> At the beginning it was a little strange, I must confess.. So many things to use
-                                    that overload my imagination! But after entering the site a few more times, I got accustomed
-                                    to those kinky ideias! And also, my kids and grandkids do not even imagine that I know
-                                    these things!</p>
-                                <h4 class="font-weight-bold">Diogo Rolo</h4>
-                                <h6 class="font-weight-bold my-3">Loves to code with Vim, hates having fun, 70 years</h6>
-                            </div>
-                        </div>
-                        <!--Fifth slide-->
-                        <!--Sixth slide-->
-                        <div class="carousel-item">
-                            <div class="testimonial">
-                                <!--Avatar-->
-                                <div class="avatar mx-auto mb-4">
-                                    <img src="resources/priscilla.jpg" width="200" height="200" class="rounded-circle img-fluid z-depth-1" alt="Third sample avatar image">
-                                </div>
-                                <!--Content-->
-                                <p>
-                                    <i class="fas fa-quote-left"></i> My review it’s quite simple… I LOVED IT!!!!! Ohhhh those positions and toys worked
-                                    so well in my personal life! I even tried some things with my husband that I didn’t know
-                                    when I was in my 30’s.</p>
-                                <h4 class="font-weight-bold">Priscilla Lopes</h4>
-                                <h6 class="font-weight-bold my-3">Still a teacher at Academia de Código, 69 years</h6>
-                            </div>
-                        </div>
-                        <!--Sixth slide-->
-                        <!--7th slide-->
-                        <div class="carousel-item">
-                            <div class="testimonial">
-                                <!--Avatar-->
-                                <div class="avatar mx-auto mb-4">
-                                    <img src="resources/sara.jpg" width="200" height="200" class="rounded-circle img-fluid z-depth-1" alt="Third sample avatar image">
-                                </div>
-                                <!--Content-->
-                                <p>
-                                    <i class="fas fa-quote-left"></i> Would I be too horny if I said that I already bought everything?? Because I have!!
-                                    Those modern toys really hurt my hip.. But these adapted toys for older people, are magical!
-                                    5 stars to the people who invented these.</p>
-                                <h4 class="font-weight-bold">Sara Lopes</h4>
-                                <h6 class="font-weight-bold my-3">Responsible for the dev movement "Yes, Sara", 68 years</h6>
-                            </div>
-                        </div>
-                        <!--7th slide-->
-                    </div>
-                    <!--Slides-->
-                    <!--Controls-->
-                    <a class="carousel-control-prev left carousel-control" href="#carousel-example-1" role="button" data-slide="prev">
-                        <span class="icon-prev" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next right carousel-control" href="#carousel-example-1" role="button" data-slide="next">
-                        <span class="icon-next" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                    <!--Controls-->
+        
+        <div class="page-header">
+            <h2 class="h1-responsive font-weight-light my-5">Products
+                <h5>Spice up your sex life!</h5>
+                <br>
+                <div style="float: right; cursor: pointer;">
+                    <span class="glyphicon glyphicon-shopping-cart my-cart-icon">
+                        <span class="badge badge-notify my-cart-badge"></span>
+                    </span>
                 </div>
-                <!-- Carousel Wrapper -->
-            </div>
-
-        </section>
-        <!-- Section: Testimonials v.2 -->
-
-    </div>
-
-    <div class="credit">
-
-    </div>
-
-    <div class="contact">
-
-        <!-- Section: Contact v.1 -->
-        <section class="my-5">
-
-            <!-- Section heading -->
-            <h2 class="h1-responsive font-weight-bold text-center my-5">Contact us</h2>
-            <!-- Section description -->
-            <p class="text-center w-responsive mx-auto pb-5">Our mindblowing elderly dev's will give it all to give you a quick answer!</p>
-
-            <!-- Grid row -->
-            <div class="row">
-
-                <!-- Grid column -->
-                <div class="col-lg-5 mb-lg-0 mb-4">
-
-                    <!-- Form with header -->
-                    <div class="card">
-                        <div class="card-body">
-                            <!-- Header -->
-                            <div class="form-header">
-                                <h3 class="mt-2">
-                                    <i class="fas fa-envelope"></i> Write to us:</h3>
-                            </div>
-                            <p class="dark-grey-text"></p>
-                            <!-- Body -->
-                            <div class="md-form">
-                                <i class="fas fa-user prefix grey-text"></i>
-                                <input type="text" id="form-name" class="form-control">
-                                <label for="form-name">Your name</label>
-                            </div>
-                            <div class="md-form">
-                                <i class="fas fa-envelope prefix grey-text"></i>
-                                <input type="text" id="form-email" class="form-control">
-                                <label for="form-email">Your email</label>
-                            </div>
-                            <div class="md-form">
-                                <i class="fas fa-tag prefix grey-text"></i>
-                                <input type="text" id="form-Subject" class="form-control">
-                                <label for="form-Subject">Subject</label>
-                            </div>
-                            <div class="md-form">
-                                <i class="fas fa-pencil-alt prefix grey-text"></i>
-                                <textarea id="form-text" class="form-control md-textarea" rows="3"></textarea>
-                                <label for="form-text">Send message</label>
-                            </div>
-                            <div class="text-center">
-                                <button class="btn btn-light-blue">Submit</button>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Form with header -->
-
-                </div>
-                <!-- Grid column -->
-
-                <!-- Grid column -->
-                <div class="col-lg-7">
-
-                    <!--Google map-->
-                    <div id="map-container-section" class="z-depth-1-half map-container-section mb-4" style="height: 400px">
-                        <div id="map"></div>
-                    </div>
-                    <!-- Buttons-->
-                    <div class="row text-center">
-                        <div class="col-md-4">
-                            <a class="btn-floating">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </a>
-                            <p>Tv. de São Pedro 8</p>
-                            <p class="mb-md-0">Lisbon</p>
-                        </div>
-                        <div class="col-md-4">
-                            <a class="btn-floating">
-                                <i class="fas fa-phone"></i>
-                            </a>
-                            <p>+351 91 123 45 67</p>
-                            <p class="mb-md-0">Mon - Sat, 09:00-24:00</p>
-                        </div>
-                        <div class="col-md-4">
-                            <a class="btn-floating">
-                                <i class="fas fa-envelope"></i>
-                            </a>
-                            <p>freakon_info@gmail.com</p>
-                            <p class="mb-0">freakon_dev@gmail.com</p>
-                        </div>
-                    </div>
-
-                </div>
-                <!-- Grid column -->
-
-            </div>
-            <!-- Grid row -->
-
-        </section>
-        <!-- Section: Contact v.1 -->
-
-    </div>
-
-    <!-- JQuery -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
-    <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.7/js/mdb.min.js"></script>
-
-    <script src="map.js"></script>
-
-    <footer id="myFooter">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-3">
-                    <h2 class="logo">
-                        <img src="resources/logo.svg" width="175px" height="175px"> </a>
-                    </h2>
-                </div>
-                <div class="col-sm-2">
-                    <h5>Get started</h5>
-                    <ul>
-                        <li>
-                            <a href="#">Home</a>
-                        </li>
-                        <li>
-                            <a href="#">Sign up</a>
-                        </li>
-                        <li>
-                            <a href="#">Downloads</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-sm-2">
-                    <h5>About us</h5>
-                    <ul>
-                        <li>
-                            <a href="#">Company Information</a>
-                        </li>
-                        <li>
-                            <a href="#">Contact us</a>
-                        </li>
-                        <li>
-                            <a href="#">Reviews</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-sm-2">
-                    <h5>Support</h5>
-                    <ul>
-                        <li>
-                            <a href="#">FAQ</a>
-                        </li>
-                        <li>
-                            <a href="#">Help desk</a>
-                        </li>
-                        <li>
-                            <a href="#">Forums</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <img src="resources/man-lifting-an-old-man.svg" width="60px" height="60px" alt="">
-                        <img src="resources/old-lady-walking-.svg" width="60px" height="60px" alt="">
-                        <img src="resources/walk.svg" width="60px" height="60px" alt="">
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
-                </div>
-            </div>
+            </h1>
         </div>
-        <div class="footer-copyright">
-            <p>© 2019 FreakOn </p>
+
+        <div class="row">
+            <div class="col-md-3 text-center">
+                <img src="images/img_1.png" width="150px" height="150px">
+                <br> product 1 -
+                <strong>$10</strong>
+                <br>
+                <button class="btn btn-info my-cart-btn" data-id="1" data-name="product 1" data-summary="summary 1" data-price="10" data-quantity="1"
+                    data-image="images/img_1.png">Add to Cart</button>
+                
+            </div>
+
+            <div class="col-md-3 text-center">
+                <img src="images/img_2.png" width="150px" height="150px">
+                <br> product 2 -
+                <strong>$20</strong>
+                <br>
+                <button class="btn btn-info my-cart-btn" data-id="2" data-name="product 2" data-summary="summary 2" data-price="20" data-quantity="1"
+                    data-image="images/img_2.png">Add to Cart</button>
+                
+            </div>
+
+            <div class="col-md-3 text-center">
+                <img src="images/img_3.png" width="150px" height="150px">
+                <br> product 3 -
+                <strong>$30</strong>
+                <br>
+                <button class="btn btn-info my-cart-btn" data-id="3" data-name="product 3" data-summary="summary 3" data-price="30" data-quantity="1"
+                    data-image="images/img_3.png">Add to Cart</button>
+                
+            </div>
+
+            <div class="col-md-3 text-center">
+                <img src="images/img_4.png" width="150px" height="150px">
+                <br> product 4 -
+                <strong>$40</strong>
+                <br>
+                <button class="btn btn-info my-cart-btn" data-id="4" data-name="product 4" data-summary="summary 4" data-price="40" data-quantity="1"
+                    data-image="images/img_4.png">Add to Cart</button>
+                
+            </div>
+
+            <div class="col-md-3 text-center">
+                <img src="images/img_5.png" width="150px" height="150px">
+                <br> product 5 -
+                <strong>$50</strong>
+                <br>
+                <button class="btn btn-info my-cart-btn" data-id="5" data-name="product 5" data-summary="summary 5" data-price="50" data-quantity="1"
+                    data-image="images/img_5.png">Add to Cart</button>
+                
+            </div>
+
+            <div class="col-md-3 text-center">
+                <img src="images/img_5.png" width="150px" height="150px">
+                <br> product 5 -
+                <strong>$50</strong>
+                <br>
+                <button class="btn btn-info my-cart-btn" data-id="5" data-name="product 5" data-summary="summary 5" data-price="50" data-quantity="1"
+                    data-image="images/img_5.png">Add to Cart</button>
+               
+            </div>
+
+            <div class="col-md-3 text-center">
+                <img src="images/img_5.png" width="150px" height="150px">
+                <br> product 5 -
+                <strong>$50</strong>
+                <br>
+                <button class="btn btn-info my-cart-btn" data-id="5" data-name="product 5" data-summary="summary 5" data-price="50" data-quantity="1"
+                    data-image="images/img_5.png">Add to Cart</button>
+                
+            </div>
+
+            <div class="col-md-3 text-center">
+                <img src="images/img_5.png" width="150px" height="150px">
+                <br> product 5 -
+                <strong>$50</strong>
+                <br>
+                <button class="btn btn-info my-cart-btn" data-id="5" data-name="product 5" data-summary="summary 5" data-price="50" data-quantity="1"
+                    data-image="images/img_5.png">Add to Cart</button>
+                
+            </div>
+
         </div>
-    </footer>
+<br>
+        <div class="testimonials">
+
+            <!-- Section: Testimonials v.2 -->
+            <section class="text-center my-5">
+
+                <!-- Section heading -->
+                <h2 class="h1-responsive font-weight-light my-5">Testimonials</h2>
+                <h5>Check out what our users say about our products!</h5>
+                <br>
+
+                <div class="wrapper-carousel-fix">
+                    <!-- Carousel Wrapper -->
+                    <div id="carousel-example-1" class="carousel no-flex testimonial-carousel slide carousel-fade" data-ride="carousel" data-interval="false">
+                        <!--Slides-->
+                        <div class="carousel-inner" role="listbox">
+                            <!--First slide-->
+                            <div class="carousel-item active">
+                                <div class="testimonial">
+                                    <!--Avatar-->
+                                    <div class="avatar mx-auto mb-4">
+                                        <img src="resources/robin.jpg" width="200" height="200" class="rounded-circle img-fluid z-depth-1" alt="First sample avatar image">
+                                    </div>
+                                    <!--Content-->
+                                    <p>
+                                        <i class="fas fa-quote-left"></i> I don't know how to explain the joy I have using these products. When the company
+                                        started, I was pretty excited, but also very fearful with the possibility of my kids
+                                        or my grandkids find out about my dark fantasies, but everything worked out pretty
+                                        well since the first delivery and I can't wait to try out the new products!
+                                    </p>
+                                    <br>
+                                    <h4 class="font-weight-bold">Robin Opinião</h4>
+                                    <h6 class="font-weight-bold my-3">Super Ultra Senior Dev, former Ultra Master Coder, 75 years</h6>
+
+                                </div>
+                            </div>
+                            <!--First slide-->
+                            <!--Second slide-->
+                            <div class="carousel-item">
+                                <div class="testimonial">
+                                    <!--Avatar-->
+                                    <div class="avatar mx-auto mb-4">
+                                        <img src="resources/campino.jpg" width="200" height="200" class="rounded-circle img-fluid z-depth-1" alt="Second sample avatar image">
+                                    </div>
+                                    <!--Content-->
+                                    <p>
+                                        <i class="fas fa-quote-left"></i>Eventually we all gonna die… So, why not enjoy our lives to the maximum?? And
+                                        when I say maximum, I really mean “maximum”!! At least I will die satisfied! </p>
+                                    <h4 class="font-weight-bold">Catarina Campino</h4>
+                                    <h6 class="font-weight-bold my-3">Bootcamp Momma for the last 45 years, 81 years</h6>
+
+                                </div>
+                            </div>
+                            <!--Second slide-->
+                            <!--Third slide-->
+                            <div class="carousel-item">
+                                <div class="testimonial">
+                                    <!--Avatar-->
+                                    <div class="avatar mx-auto mb-4">
+                                        <img src="resources/chris.jpg" width="200" height="200" class="rounded-circle img-fluid z-depth-1" alt="Third sample avatar image">
+                                    </div>
+                                    <!--Content-->
+                                    <p>
+                                        <i class="fas fa-quote-left"></i> I was completely shocked!! In the UK, there wasn't a website like this one!!
+                                        But when I entered the site for the first time, the imagination I had in my younger
+                                        years began to appear again... And I truly recommend that horny wheelchair! Wink
+                                        Wink!
+                                    </p>
+                                    <h4 class="font-weight-bold">Christina Hinchin</h4>
+                                    <h6 class="font-weight-bold my-3">Former Artist and still a Dev, 88 years</h6>
+                                </div>
+                            </div>
+                            <!--Third slide-->
+                            <!--Forth slide-->
+                            <div class="carousel-item">
+                                <div class="testimonial">
+                                    <!--Avatar-->
+                                    <div class="avatar mx-auto mb-4">
+                                        <img src="resources/audrey.jpg" width="200" height="200" class="rounded-circle img-fluid z-depth-1" alt="Third sample avatar image">
+                                    </div>
+                                    <!--Content-->
+                                    <p>
+                                        <i class="fas fa-quote-left"></i> I was amazed! This site completely changed my sex life. Before, it was boring
+                                        with no type of action whatsoever… Now, I think it’s even better than when I was
+                                        younger!
+                                    </p>
+                                    <h4 class="font-weight-bold">Audrey Lopes</h4>
+                                    <h6 class="font-weight-bold my-3">Former Dev, Student Momma, 73 years</h6>
+                                </div>
+                            </div>
+                            <!--Forth slide-->
+                            <!--Fifth slide-->
+                            <div class="carousel-item">
+                                <div class="testimonial">
+                                    <!--Avatar-->
+                                    <div class="avatar mx-auto mb-4">
+                                        <img src="resources/rolo.jpg" width="200" height="200" class="rounded-circle img-fluid z-depth-1" alt="Third sample avatar image">
+                                    </div>
+                                    <!--Content-->
+                                    <p>
+                                        <i class="fas fa-quote-left"></i> At the beginning it was a little strange, I must confess.. So many things to
+                                        use that overload my imagination! But after entering the site a few more times, I
+                                        got accustomed to those kinky ideias! And also, my kids and grandkids do not even
+                                        imagine that I know these things!</p>
+                                    <h4 class="font-weight-bold">Diogo Rolo</h4>
+                                    <h6 class="font-weight-bold my-3">Loves to code with Vim, hates having fun, 70 years</h6>
+                                </div>
+                            </div>
+                            <!--Fifth slide-->
+                            <!--Sixth slide-->
+                            <div class="carousel-item">
+                                <div class="testimonial">
+                                    <!--Avatar-->
+                                    <div class="avatar mx-auto mb-4">
+                                        <img src="resources/priscilla.jpg" width="200" height="200" class="rounded-circle img-fluid z-depth-1" alt="Third sample avatar image">
+                                    </div>
+                                    <!--Content-->
+                                    <p>
+                                        <i class="fas fa-quote-left"></i> My review it’s quite simple… I LOVED IT!!!!! Ohhhh those positions and toys
+                                        worked so well in my personal life! I even tried some things with my husband that
+                                        I didn’t know when I was in my 30’s.</p>
+                                    <h4 class="font-weight-bold">Priscilla Lopes</h4>
+                                    <h6 class="font-weight-bold my-3">Still a teacher at Academia de Código, 69 years</h6>
+                                </div>
+                            </div>
+                            <!--Sixth slide-->
+                            <!--7th slide-->
+                            <div class="carousel-item">
+                                <div class="testimonial">
+                                    <!--Avatar-->
+                                    <div class="avatar mx-auto mb-4">
+                                        <img src="resources/sara.jpg" width="200" height="200" class="rounded-circle img-fluid z-depth-1" alt="Third sample avatar image">
+                                    </div>
+                                    <!--Content-->
+                                    <p>
+                                        <i class="fas fa-quote-left"></i> Would I be too horny if I said that I already bought everything?? Because I
+                                        have!! Those modern toys really hurt my hip.. But these adapted toys for older people,
+                                        are magical! 5 stars to the people who invented these.</p>
+                                    <h4 class="font-weight-bold">Sara Lopes</h4>
+                                    <h6 class="font-weight-bold my-3">Responsible for the dev movement "Yes, Sara", 68 years</h6>
+                                </div>
+                            </div>
+                            <!--7th slide-->
+                        </div>
+                        <!--Slides-->
+                        <!--Controls-->
+                        <a class="carousel-control-prev left carousel-control" href="#carousel-example-1" role="button" data-slide="prev">
+                            <span class="icon-prev" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next right carousel-control" href="#carousel-example-1" role="button" data-slide="next">
+                            <span class="icon-next" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                        <!--Controls-->
+                    </div>
+                    <!-- Carousel Wrapper -->
+                </div>
+
+            </section>
+            <!-- Section: Testimonials v.2 -->
+
+        </div>
+
+        <div class="credit">
+
+        </div>
+
+        <div class="contact">
+
+            <!-- Section: Contact v.1 -->
+            <section class="my-5">
+
+                <!-- Section heading -->
+                <h2 class="h1-responsive font-weight-bold text-center my-5">Contact us</h2>
+                <!-- Section description -->
+                <p class="text-center w-responsive mx-auto pb-5">Our mindblowing elderly dev's will give it all to give you a quick answer!</p>
+
+                <!-- Grid row -->
+                <div class="row">
+
+                    <!-- Grid column -->
+                    <div class="col-lg-5 mb-lg-0 mb-4">
+
+                        <!-- Form with header -->
+                        <div class="card">
+                            <div class="card-body">
+                                <!-- Header -->
+                                <div class="form-header">
+                                    <h3 class="mt-2">
+                                        <i class="fas fa-envelope"></i> Write to us:</h3>
+                                </div>
+                                <p class="dark-grey-text"></p>
+                                <!-- Body -->
+                                <div class="md-form">
+                                    <i class="fas fa-user prefix grey-text"></i>
+                                    <input type="text" id="form-name" class="form-control">
+                                    <label for="form-name">Your name</label>
+                                </div>
+                                <div class="md-form">
+                                    <i class="fas fa-envelope prefix grey-text"></i>
+                                    <input type="text" id="form-email" class="form-control">
+                                    <label for="form-email">Your email</label>
+                                </div>
+                                <div class="md-form">
+                                    <i class="fas fa-tag prefix grey-text"></i>
+                                    <input type="text" id="form-Subject" class="form-control">
+                                    <label for="form-Subject">Subject</label>
+                                </div>
+                                <div class="md-form">
+                                    <i class="fas fa-pencil-alt prefix grey-text"></i>
+                                    <textarea id="form-text" class="form-control md-textarea" rows="3"></textarea>
+                                    <label for="form-text">Send message</label>
+                                </div>
+                                <div class="text-center">
+                                    <button class="btn btn-light-blue">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Form with header -->
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-lg-7">
+
+                        <!--Google map-->
+                        <div id="map-container-section" class="z-depth-1-half map-container-section mb-4" style="height: 400px">
+                            <div id="map"></div>
+                        </div>
+                        <!-- Buttons-->
+                        <div class="row text-center">
+                            <div class="col-md-4">
+                                <a class="btn-floating">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </a>
+                                <p>Tv. de São Pedro 8</p>
+                                <p class="mb-md-0">Lisbon</p>
+                            </div>
+                            <div class="col-md-4">
+                                <a class="btn-floating">
+                                    <i class="fas fa-phone"></i>
+                                </a>
+                                <p>+351 91 123 45 67</p>
+                                <p class="mb-md-0">Mon - Sat, 09:00-24:00</p>
+                            </div>
+                            <div class="col-md-4">
+                                <a class="btn-floating">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                                <p>freakon_info@gmail.com</p>
+                                <p class="mb-0">freakon_dev@gmail.com</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Grid column -->
+
+                </div>
+                <!-- Grid row -->
+
+            </section>
+            <!-- Section: Contact v.1 -->
+
+        </div>
+
+        <!-- JQuery -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.7/js/mdb.min.js"></script>
+
+        <script src="map.js"></script>
+
+        <footer id="myFooter">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <h2 class="logo">
+                            <img src="resources/logo.svg" width="175px" height="175px"> </a>
+                        </h2>
+                    </div>
+                    <div class="col-sm-2">
+                        <h5>Get started</h5>
+                        <ul>
+                            <li>
+                                <a href="#">Home</a>
+                            </li>
+                            <li>
+                                <a href="#">Sign up</a>
+                            </li>
+                            <li>
+                                <a href="#">Downloads</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2">
+                        <h5>About us</h5>
+                        <ul>
+                            <li>
+                                <a href="#">Company Information</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact us</a>
+                            </li>
+                            <li>
+                                <a href="#">Reviews</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2">
+                        <h5>Support</h5>
+                        <ul>
+                            <li>
+                                <a href="#">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="#">Help desk</a>
+                            </li>
+                            <li>
+                                <a href="#">Forums</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="social-networks">
+                            <img src="resources/man-lifting-an-old-man.svg" width="60px" height="60px" alt="">
+                            <img src="resources/old-lady-walking-.svg" width="60px" height="60px" alt="">
+                            <img src="resources/walk.svg" width="60px" height="60px" alt="">
+                        </div>
+                        <button type="button" class="btn btn-default">Contact us</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>© 2019 FreakOn </p>
+            </div>
+        </footer>
 
 </body>
 
