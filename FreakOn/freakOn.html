@@ -16,18 +16,22 @@
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.7/css/mdb.min.css" rel="stylesheet">
 
+    <script src="https://cdn.rawgit.com/openlayers/openlayers.github.io/master/en/v5.3.0/build/ol.js"></script>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/openlayers/openlayers.github.io/master/en/v5.3.0/css/ol.css">
+
 </head>
 
 <body>
 
     <header>
         <!--Navbar-->
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
 
             <div class="container">
 
-                <a class="navbar-brand" href="#">Freak On</a>
-
+                <img src="resources/logo.svg" width="40" height="40" alt="">
+                <a class="navbar-brand js-scroll-trigger" href="#"> Freak On</a>
+                <a class="navbar-brand" href="#"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -37,7 +41,7 @@
 
                     <ul class="navbar-nav ml-auto smooth-scroll">
                         <li class="nav-item">
-                            <a class="nav-link" href="#intro">Home</a>
+                            <a class="nav-link js-scroll-trigger" href="#intro">Home</a>
                             <span class="sr-only">(current)</span>
                         </li>
                         <li class="nav-item">
@@ -47,7 +51,7 @@
                             <a class="nav-link" href="#examples">Products</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#testimonials">Testimonials</a>
+                            <a class="nav-link js-scroll-trigger" href="#testimonials">Testimonials</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#contact">Contact Us</a>
@@ -151,7 +155,8 @@
                                 </div>
                                 <!--Content-->
                                 <p>
-                                    <i class="fas fa-quote-left"></i>Eventually we all gonna die… So, why not enjoy our lives to the maximum?? And when I say maximum, I really mean “maximum”!! At least I will die satisfied! </p>
+                                    <i class="fas fa-quote-left"></i>Eventually we all gonna die… So, why not enjoy our lives to the maximum?? And when
+                                    I say maximum, I really mean “maximum”!! At least I will die satisfied! </p>
                                 <h4 class="font-weight-bold">Catarina Campino</h4>
                                 <h6 class="font-weight-bold my-3">Bootcamp Momma for the last 45 years, 81 years</h6>
 
@@ -235,9 +240,9 @@
                                 </div>
                                 <!--Content-->
                                 <p>
-                                    <i class="fas fa-quote-left"></i> My review it’s quite simple… I LOVED IT!!!!! Ohhhh those positions and toys worked
-                                    so well in my personal life! I even tried some things with my husband that I didn’t know
-                                    when I was in my 30’s.</p>
+                                    <i class="fas fa-quote-left"></i> Would I be too horny if I said that I already bought everything?? Because I have!!
+                                    Those modern toys really hurt my hip.. But these adapted toys for older people, are magical!
+                                    5 stars to the people who invented these.</p>
                                 <h4 class="font-weight-bold">Sara Lopes</h4>
                                 <h6 class="font-weight-bold my-3">Responsible for the dev movement "Yes, Sara", 68 years</h6>
                             </div>
@@ -270,6 +275,101 @@
 
     <div class="contact">
 
+        <!-- Section: Contact v.1 -->
+        <section class="my-5">
+
+            <!-- Section heading -->
+            <h2 class="h1-responsive font-weight-bold text-center my-5">Contact us</h2>
+            <!-- Section description -->
+            <p class="text-center w-responsive mx-auto pb-5">Our mindblowing elderly dev's will give it all to give you a quick answer!</p>
+
+            <!-- Grid row -->
+            <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-lg-5 mb-lg-0 mb-4">
+
+                    <!-- Form with header -->
+                    <div class="card">
+                        <div class="card-body">
+                            <!-- Header -->
+                            <div class="form-header">
+                                <h3 class="mt-2">
+                                    <i class="fas fa-envelope"></i> Write to us:</h3>
+                            </div>
+                            <p class="dark-grey-text"></p>
+                            <!-- Body -->
+                            <div class="md-form">
+                                <i class="fas fa-user prefix grey-text"></i>
+                                <input type="text" id="form-name" class="form-control">
+                                <label for="form-name">Your name</label>
+                            </div>
+                            <div class="md-form">
+                                <i class="fas fa-envelope prefix grey-text"></i>
+                                <input type="text" id="form-email" class="form-control">
+                                <label for="form-email">Your email</label>
+                            </div>
+                            <div class="md-form">
+                                <i class="fas fa-tag prefix grey-text"></i>
+                                <input type="text" id="form-Subject" class="form-control">
+                                <label for="form-Subject">Subject</label>
+                            </div>
+                            <div class="md-form">
+                                <i class="fas fa-pencil-alt prefix grey-text"></i>
+                                <textarea id="form-text" class="form-control md-textarea" rows="3"></textarea>
+                                <label for="form-text">Send message</label>
+                            </div>
+                            <div class="text-center">
+                                <button class="btn btn-light-blue">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Form with header -->
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-lg-7">
+
+                    <!--Google map-->
+                    <div id="map-container-section" class="z-depth-1-half map-container-section mb-4" style="height: 400px">
+                        <div id="map"></div>
+                    </div>
+                    <!-- Buttons-->
+                    <div class="row text-center">
+                        <div class="col-md-4">
+                            <a class="btn-floating">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </a>
+                            <p>Tv. de São Pedro 8</p>
+                            <p class="mb-md-0">Lisbon</p>
+                        </div>
+                        <div class="col-md-4">
+                            <a class="btn-floating">
+                                <i class="fas fa-phone"></i>
+                            </a>
+                            <p>+351 91 123 45 67</p>
+                            <p class="mb-md-0">Mon - Sat, 09:00-24:00</p>
+                        </div>
+                        <div class="col-md-4">
+                            <a class="btn-floating">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                            <p>freakon_info@gmail.com</p>
+                            <p class="mb-0">freakon_dev@gmail.com</p>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+        </section>
+        <!-- Section: Contact v.1 -->
+
     </div>
 
     <!-- JQuery -->
@@ -281,8 +381,71 @@
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.7/js/mdb.min.js"></script>
 
-    <footer>
+    <script src="map.js"></script>
 
+    <footer id="myFooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h2 class="logo">
+                        <img src="resources/logo.svg" width="175px" height="175px"> </a>
+                    </h2>
+                </div>
+                <div class="col-sm-2">
+                    <h5>Get started</h5>
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Sign up</a>
+                        </li>
+                        <li>
+                            <a href="#">Downloads</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+                    <h5>About us</h5>
+                    <ul>
+                        <li>
+                            <a href="#">Company Information</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact us</a>
+                        </li>
+                        <li>
+                            <a href="#">Reviews</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+                    <h5>Support</h5>
+                    <ul>
+                        <li>
+                            <a href="#">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="#">Help desk</a>
+                        </li>
+                        <li>
+                            <a href="#">Forums</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <div class="social-networks">
+                        <img src="resources/man-lifting-an-old-man.svg" width="60px" height="60px" alt="">
+                        <img src="resources/old-lady-walking-.svg" width="60px" height="60px" alt="">
+                        <img src="resources/walk.svg" width="60px" height="60px" alt="">
+                    </div>
+                    <button type="button" class="btn btn-default">Contact us</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>© 2019 FreakOn </p>
+        </div>
     </footer>
 
 </body>
