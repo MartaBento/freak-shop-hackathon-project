@@ -27,7 +27,7 @@
 
     <header>
         <!--Navbar-->
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <nav class="navbar mr-auto navbar-expand-lg navbar-dark fixed-top">
 
             <div class="container">
 
@@ -58,19 +58,15 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#contact">Contact Us</a>
                         </li>
-                        <li style="float: right; cursor: pointer" class="nav-item">
-                            <div style="float: right; cursor: pointer;">
-                                <span class="glyphicon glyphicon-shopping-cart my-cart-icon">
-                                    <i class="fas fa-shopping-cart fa-lg icon-cog text-white">
-                                        <span id = "toAddCart" class="badge badge-notify my-cart-badge">0</span>
-                                    </i>
-                                </span>
-
+                        <li class="nav-item">
+                            <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#cart">Cart (
+                                <span class="total-count"></span>)</button>
+                            <button class="clear-cart btn btn-danger btn-sm">Clear Cart</button>
                         </li>
-
-                    </ul>
-                    </div>
                 </div>
+                </ul>
+            </div>
+            </div>
         </nav>
 
         <div id="intro" class="view">
@@ -119,98 +115,121 @@
     </div>
 
     <div class="products">
+        <section class="text-center my-5">
+            <div class="page-header" id="productsIntro">
+                <h2 class="h1-responsive font-weight-light my-5">Products
+                    <h5>Spice up your sex life!</h5>
+                    <br>
+            </div>
 
-        <div class="page-header">
-            <h2 class="h1-responsive font-weight-light my-5">Products
-                <h5>Spice up your sex life!</h5>
-                <br>
+            <div id="productsContainer" class="container">
 
-        </div>
-        </h1>
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="card" style="width: 20rem;">
+                            <img class="card-img-top" src="resources/store1.png" alt="Card image cap">
+                            <div class="card-block">
+                                <h4 class="card-title">Orange</h4>
+                                <p class="card-text">Price: $0.5</p>
+                                <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm">
+                        <div class="card" style="width: 20rem;">
+                            <img class="card-img-top" src="resources/store2.jpg" alt="Card image cap">
+                            <div class="card-block">
+                                <h4 class="card-title">Banana</h4>
+                                <p class="card-text">Price: $1.22</p>
+                                <a href="#" data-name="Banana" data-price="1.22" class="add-to-cart btn btn-primary">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="card" style="width: 20rem;">
+                            <img class="card-img-top" src="resources/store3.jpg" alt="Card image cap">
+                            <div class="card-block">
+                                <h4 class="card-title">Lemon</h4>
+                                <p class="card-text">Price: $5</p>
+                                <a href="#" data-name="Lemon" data-price="5" class="add-to-cart btn btn-primary">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm">
+                        <div class="card" style="width: 20rem;">
+                            <img class="card-img-top" src="resources/store4.png" alt="Card image cap">
+                            <div class="card-block">
+                                <h4 class="card-title">Orange</h4>
+                                <p class="card-text">Price: $0.5</p>
+                                <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm">
+                        <div class="card" style="width: 20rem;">
+                            <img class="card-img-top" src="resources/store5.jpg" alt="Card image cap">
+                            <div class="card-block">
+                                <h4 class="card-title">Orange</h4>
+                                <p class="card-text">Price: $0.5</p>
+                                <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm">
+                        <div class="card" style="width: 20rem;">
+                            <img class="card-img-top" src="resources/store7.jpg" alt="Card image cap">
+                            <div class="card-block">
+                                
+                                <h4 class="card-title">Orange</h4>
+                                <p class="card-text">Price: $0.5</p>
+                                <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- Modal -->
+            <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <table class="show-cart table">
+
+                            </table>
+                            <div>Total price: $
+                                <span class="total-cart"></span>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Order now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
     </div>
 
-    <div class="row">
-        <div class="col-md-3 text-center">
-            <img src="images/img_1.png" width="150px" height="150px">
-            <br> product 1 -
-            <strong>$10</strong>
-            <br>
-            <button type="submit" class="btn btn-info" data-id="1" data-name="product 1" data-summary="summary 1" data-price="10" data-quantity="1"
-                data-image="images/img_1.png">Add to Cart</button>
-        </div>
 
-        <div class="col-md-3 text-center">
-            <img src="images/img_2.png" width="150px" height="150px">
-            <br> product 2 -
-            <strong>$20</strong>
-            <br>
-            <button class="btn btn-info my-cart-btn" data-id="2" data-name="product 2" data-summary="summary 2" data-price="20" data-quantity="1"
-                data-image="images/img_2.png">Add to Cart</button>
-
-        </div>
-
-        <div class="col-md-3 text-center">
-            <img src="images/img_3.png" width="150px" height="150px">
-            <br> product 3 -
-            <strong>$30</strong>
-            <br>
-            <button class="btn btn-info my-cart-btn" data-id="3" data-name="product 3" data-summary="summary 3" data-price="30" data-quantity="1"
-                data-image="images/img_3.png">Add to Cart</button>
-
-        </div>
-
-        <div class="col-md-3 text-center">
-            <img src="images/img_4.png" width="150px" height="150px">
-            <br> product 4 -
-            <strong>$40</strong>
-            <br>
-            <button class="btn btn-info my-cart-btn" data-id="4" data-name="product 4" data-summary="summary 4" data-price="40" data-quantity="1"
-                data-image="images/img_4.png">Add to Cart</button>
-
-        </div>
-
-        <div class="col-md-3 text-center">
-            <img src="images/img_5.png" width="150px" height="150px">
-            <br> product 5 -
-            <strong>$50</strong>
-            <br>
-            <button class="btn btn-info my-cart-btn" data-id="5" data-name="product 5" data-summary="summary 5" data-price="50" data-quantity="1"
-                data-image="images/img_5.png">Add to Cart</button>
-
-        </div>
-
-        <div class="col-md-3 text-center">
-            <img src="images/img_5.png" width="150px" height="150px">
-            <br> product 5 -
-            <strong>$50</strong>
-            <br>
-            <button class="btn btn-info my-cart-btn" data-id="5" data-name="product 5" data-summary="summary 5" data-price="50" data-quantity="1"
-                data-image="images/img_5.png">Add to Cart</button>
-
-        </div>
-
-        <div class="col-md-3 text-center">
-            <img src="images/img_5.png" width="150px" height="150px">
-            <br> product 5 -
-            <strong>$50</strong>
-            <br>
-            <button class="btn btn-info my-cart-btn" data-id="5" data-name="product 5" data-summary="summary 5" data-price="50" data-quantity="1"
-                data-image="images/img_5.png">Add to Cart</button>
-
-        </div>
-
-        <div class="col-md-3 text-center">
-            <img src="images/img_5.png" width="150px" height="150px">
-            <br> product 5 -
-            <strong>$50</strong>
-            <br>
-            <button class="btn btn-info my-cart-btn" data-id="5" data-name="product 5" data-summary="summary 5" data-price="50" data-quantity="1"
-                data-image="images/img_5.png">Add to Cart</button>
-
-        </div>
 
     </div>
-    <br>
+    
     <div class="testimonials">
 
         <!-- Section: Testimonials v.2 -->
@@ -257,7 +276,8 @@
                                 <!--Content-->
                                 <p>
                                     <i class="fas fa-quote-left"></i>Eventually we all gonna die… So, why not enjoy our lives to the maximum?? And when
-                                    I say maximum, I really mean “maximum”!! At least I will die satisfied! </p>
+                                    I say maximum, I really mean “maximum”!! At least I will die satisfied!
+                                </p>
                                 <h4 class="font-weight-bold">Catarina Campino</h4>
                                 <h6 class="font-weight-bold my-3">Bootcamp Momma for the last 45 years, 81 years</h6>
 
@@ -311,7 +331,8 @@
                                     <i class="fas fa-quote-left"></i> At the beginning it was a little strange, I must confess.. So many things to use
                                     that overload my imagination! But after entering the site a few more times, I got accustomed
                                     to those kinky ideias! And also, my kids and grandkids do not even imagine that I know
-                                    these things!</p>
+                                    these things!
+                                </p>
                                 <h4 class="font-weight-bold">Diogo Rolo</h4>
                                 <h6 class="font-weight-bold my-3">Loves to code with Vim, hates having fun, 70 years</h6>
                             </div>
@@ -486,8 +507,7 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.7/js/mdb.min.js"></script>
 
     <script src="map.js"></script>
-    <script src="jquery.mycart.js"></script>
-    <script src="store.js"></script>
+    <script src="shopCart.js"></script>
 
     <footer id="myFooter">
         <div class="container">
