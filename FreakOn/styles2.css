@@ -7,6 +7,7 @@
     -moz-osx-font-smoothing:grayscale;
     margin: 0;
     padding: 0;
+    
 }
 
 html,
@@ -56,7 +57,6 @@ header,
     align-content: center;
 }
 
-/* shopping section */
 
 h5 {
     text-align: center;
@@ -68,11 +68,20 @@ h5 {
     text-align: center;
     padding: 10px;
   }
+
   .card-img-top {
     width: 100px;
     height: auto;
     align-self: center;
     align-content: center;
+  }
+
+  .contact {
+      margin-left: 30px;
+  }
+  .card-body {
+    text-align: left;
+
   }
 
 
