@@ -25,7 +25,10 @@
 
 <body>
 
+
+
     <header>
+
         <!--Navbar-->
         <nav class="navbar mr-auto navbar-expand-lg navbar-dark fixed-top">
 
@@ -195,7 +198,6 @@
 
             </div>
 
-
             <!-- Modal -->
             <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-lg" role="document">
@@ -216,11 +218,29 @@
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary" data-toggle="modal2" data-dismiss="modal">Order now</button>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart2" data-dismiss="modal">Order now</button>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <div class="modal fade" id="cart2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <br>
+                        <br>
+                        <h2 class="h1-responsive font-weight-light my-5">Congratulations! Your order it's on it's way!</h2>
+                        <br>
+                        <img id="box" src="resources/boxanim.gif" alt="">
+
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart2" data-dismiss="modal2" onclick="snd.play()">Close</button>
+                    </div>
+                    <a class="close-reveal-modal">&#215;</a>
+
+                </div>
+            </div>
+    </div>
+    </div>
 
 
     </div>
@@ -372,25 +392,28 @@
                         </div>
                         <!--7th slide-->
                     </div>
-                    <!--Slides-->
-                    <!--Controls-->
-                    <a class="carousel-control-prev left carousel-control" href="#carousel-example-1" role="button" data-slide="prev">
+
+                    <i class="fas fa-angle-double-left" href="#carousel-example-1" role="button" data-slide="next">
+
+                        <span class="icon-prev" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </i>
+                    
+                    <i class="fas fa-angle-double-right" href="#carousel-example-1" data-slide="prev">
 
                         <span class="icon-prev" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next right carousel-control" href="#carousel-example-1" role="button" data-slide="next">
+                    </i>
 
-                        <span class="icon-next" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                    <!--Controls-->
+
                 </div>
-                <!-- Carousel Wrapper -->
+
             </div>
 
         </section>
-        <!-- Section: Testimonials v.2 -->
+
+
+
 
     </div>
 
@@ -507,6 +530,7 @@
 
     <script src="map.js"></script>
     <script src="shopCart.js"></script>
+    <script src="sound.js"></script>
 
     <footer id="myFooter">
         <div class="container">

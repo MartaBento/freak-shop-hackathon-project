@@ -10,6 +10,7 @@
     
 }
 
+
 html,
 body,
 header,
@@ -182,4 +183,11 @@ h5 {
 #myFooter{
    flex: 0 0 auto;
    -webkit-flex: 0 0 auto;
+}
+
+
+#box {
+    padding: 40px;
+    width: 100%;
+    height: auto;
 }
